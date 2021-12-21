@@ -153,10 +153,7 @@ nav ul li:hover{
     padding-left:2px;
 }
 button{
-    background-color:rgb(0, 94, 255) ;
-    border: none;
-    width: 90px;
-    height: 50px;
+    
 
 }
 button> img {
@@ -184,9 +181,10 @@ main{
 }
 .bestseller h2{
     text-align: center; 
-    border-bottom: 1px solid #000; 
+    border-bottom: 1px solid #14279B; 
     line-height: 0.1em;
     margin: 10px 0 20px; 
+    color: #14279B;
 }
 .bestseller h2 span {
     background:#E6E6E6; 
@@ -205,19 +203,19 @@ main{
     align-items: center;
     font-family:Century Gothic;
     flex-basis: 33%;
-    min-width: 200px;
+    min-width: 400px;
     max-width:380px;
     height: 300px;
     margin:20px;
   /*  border: solid 2px blue;*/
-    justify-content: center;
+    justify-content: space-evenly;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     text-align: left;
     background-color: aliceblue;
 }
 
 .productblock:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 0.5s;
 }
 
@@ -226,11 +224,56 @@ main{
     width: 200px;
     height: 300px;
 }
+.productRight{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: bottom;
+    padding: 10px;
+}
 .productText{
     font-size:20px;
-    padding: 10px;
+      
+    /*border: solid greenyellow 2px;*/
+}
 
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*border: solid greenyellow 2px;*/
+    height: 80px;
+    padding: 10px; 
     
+
+}
+.price > .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*border: solid greenyellow 2px;*/
+    
+
+}
+.price #submit{
+    color: #E6E6E6;
+    border-radius: 50px;
+    width:100px;
+    height:30px;
+    margin-bottom:25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: #14279B;
+    border:none;
+}
+.price .buttons img{
+    color: #E6E6E6;
+    border-radius: 50px;
+    width: 30px;
+    height:30px;
+    margin-bottom:25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+     
 }
 
 
@@ -248,16 +291,17 @@ main{
 }
 .comingMain h2{
     text-align: center; 
-    border-bottom: 1px solid #000; 
+    border-bottom: 1px solid #14279B; 
     line-height: 0.1em;
     margin: 10px 0 20px; 
+    color: #14279B;
 }
 .comingMain h2 span {
     background:#E6E6E6; 
     padding:0 10px; 
 }
 .comingBlock:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 0.5s;
 }
 .comingHead{
@@ -324,7 +368,7 @@ main{
 .reviews{
     
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 35px;
     max-width: 90%;
    /* border: blue 5px solid;*/
     
@@ -333,9 +377,10 @@ main{
 }
 .reviews h2{
     text-align: center; 
-    border-bottom: 1px solid #000; 
+    border-bottom: 1px solid #14279B; 
     line-height: 0.1em;
     margin: 10px 0 20px; 
+    color: #14279B;
 }
 .reviews h2 span {
     background:#E6E6E6; 
@@ -352,7 +397,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    border: solid 1px black;
+    
     max-width:250px;
     max-height: 700px;
     padding-top: 25px;
@@ -381,11 +426,11 @@ main{
     
     display: flex;
     max-width: 100%;
-    border: solid 1px black;
     margin:0 auto;
     margin-top: 25px;
     margin-bottom: 25px;
     background-color:aliceblue ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 .newsText{
    /* border: solid 1px red;*/
@@ -408,9 +453,11 @@ main{
     
 }
 .newsSearch a button{
+    background-color:#14279B;
+    border: none;
     width: 60px;
     height: 35px;
-    color: aliceblue;
+    color: #E6E6E6;
 }
 
 
@@ -424,6 +471,7 @@ footer{
     padding-top: 25px;
     max-width: 100%;
     background-color:#14279B;
+    list-style: none;
 
 }
 footer h3{
@@ -450,5 +498,12 @@ footer .fText{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+footer ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 5px;
 }
 
