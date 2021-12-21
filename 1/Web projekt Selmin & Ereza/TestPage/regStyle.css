@@ -1,0 +1,52 @@
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+    border-radius: 15px;
+    width:500px;
+    margin:0 auto;
+    padding:40px;
+    margin-top: 25px;
+}
+
+h1,p,label{
+    font-family:Century Gothic;
+}
+#usernameID{
+    width: 350px;
+    height:40px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    font-size: 20px;
+}
+
+#emailID{
+    width: 350px;
+    height:40px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    font-size: 20px;
+}
+
+#passwordID{
+    width: 350px;
+    height:40px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    font-size: 20px;
+
+}
+
+#loginButton{
+    width: 360px;
+    height:40px;
+    border-radius: 5px;
+    border: none;
+    background-color:#14279B;
+    font-size: 20px;
+    cursor: pointer;
+    color:#E6E6E6;
+}

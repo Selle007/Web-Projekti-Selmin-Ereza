@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TESTPAGE</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="loginStyle.css">
     <link rel="stylesheet" href="loginJS.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="regStyle.css">
 </head>
 <body>
     <header>
@@ -38,16 +38,15 @@
 
     </header>
     <main>
-        <form action="">
-           <h1>Login</h1><br>
-            Email: <br> <input type="text" id="email"><br>
-            <label  for="email" id="email_error"></label><br>
-            Password: <br> <input type="password" id="password"><br>
-            <label  for="password" id="pass_error"></label><br>
-    
-            <button type="submit" id="loginButton">Login</button><br>
-            <p id="no-acc-button">Don't have an account? <a href="register.html">Sign up.</a></p>
-        </form>
+        <div class="loginForm">
+            <h1 id="loginText" >CREATE ACCOUNT</h1>
+            <label for="">Username: <br> <input type="text" name="" id="usernameID"></label><br>
+            <label for="">Email: <br> <input type="email" name="" id="emailID"></label><br> 
+            <label for="">Password: <br> <input type="password" name="" id="passwordID"></label><br>
+            <label for="">Confirm Password: <br> <input type="password" name="" id="passwordID"></label><br>
+            <a href="index.html"><input type="submit" value="Register" id="loginButton"></a><br>
+            <p id="no-acc-button">Already have an account? <a href="login.html">Sign in.</a></p>
+        </div>
     </main>
     
     <footer>

@@ -50,6 +50,7 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
+    color: #E6E6E6;
 }
 
 .links{
@@ -68,6 +69,7 @@ nav ul li{
     display: inline-block;
     margin-right: 25px;
     font-family: Century Gothic;
+    color: #E6E6E6;
     
 }
 
