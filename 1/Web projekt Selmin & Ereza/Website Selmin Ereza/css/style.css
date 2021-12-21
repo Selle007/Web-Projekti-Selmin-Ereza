@@ -59,7 +59,7 @@ a{
 header{
     background-color: #14279B;
 }
-.container img:hover{
+.container a:hover{
     transform: scale(1.15);
     transition: 0.1s;
 }
@@ -69,27 +69,23 @@ nav ul li:hover{
 }
 
 /*SLIDER---------------------------------------------------------------------*/
-.search{
-    background-image: url(banner.jpg);
+.image{
+    background-image: url(/TestPage/Img/banner.jpg);
+    background-color: #cccccc;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .search >input[type=text], input::placeholder{
     height: 50px;
-    width: 30%;
+    width: 400px;
     cursor: pointer;
     border:none;
     color: #555;
-    
-    
-
 }
 .searchbar{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
@@ -101,23 +97,11 @@ nav ul li:hover{
     transition: all 250ms ease-in-out;
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.search > input::placeholder{
-    color:#555 ;
-    padding-left:2px;
-}
-button{
-    
 
-}
-button> img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    
-}
+
 
 /*----------------------MAIN-----------------*/
 main{
@@ -392,13 +376,15 @@ main{
     margin-bottom: 25px;
     background-color:aliceblue ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    
 }
 .newsText{
-   /* border: solid 1px red;*/
+    border: solid 1px red;
     display: flex;
     flex-direction:column;
     justify-content: center;
     padding: 30px; 
+    width: 50%;
 }
 
 .newsText p{
@@ -409,7 +395,7 @@ main{
     width: 50%;
 }
 .newsSearch > #textbox{
-    width: 400px;
+    width: 50%;
     height: 30px;
     
 }
@@ -474,12 +460,15 @@ footer ul li{
 
 
 /*------------------------RESPONSIVE------------------------*/
-
-.menuIcon{
-    width: 28px;
-    margin-right:25px;
-    display:none;
+@media only screen and (min-width:1251px) {
+    header .container .menuIcon{
+        width: 28px;
+        margin-right:25px;
+        display: none;
+    }
 }
+
+
 
 @media only screen and (max-width:1250px) {
     .navbar{
@@ -516,3 +505,5 @@ footer ul li{
         cursor: pointer;
     }
 }
+
+

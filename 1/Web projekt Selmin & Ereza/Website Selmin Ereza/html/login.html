@@ -5,48 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TESTPAGE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="loginStyle.css">
-    <link rel="stylesheet" href="loginJS.js">
+    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="..\css\loginStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
 </head>
 <body>
     <header>
-        <nav>
-            <div class="navBlock">
+        <div class="container">
+            <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="logo.png" alt=""></a>
+                    <img src="..\img\logo.png" alt="">
                 </div>
-        
-                <div class="links">
-                    <ul>
-                        <a href="index.html"><li id="l1">Home</li></a>
-                        <a href=""><li id="l2">Books</li></a>
-                        <a href=""><li id="l3">Blog</li></a>
-                        <a href="about.html"><li id="l4">About Us</li></a>
-                        <a href=""><li id="l5">Contact</li></a>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="..\html\index.html">Home</a></li>
+                        <li><a href="">Books</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="..\html\about.html">About Us</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
-                </div>
-        
-                <div class="navright">
-                    <a href=""><img src="cart.png" alt="" id="cart"></a>
-                    <a href="login.html"><img src="user.png" alt="" id="user"></a>
-                </div>
+                </nav>
+                <a href="..\html\cart.html"><img src="..\Img\cart.png" alt=""></a>
+                <a href="..\html\login.html"><img src="..\Img\user.png" alt=""></a>
+                <img src="..\Img\menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
             </div>
-            
-        </nav>
+        </div>
 
-    </header>
+</div>
+
+</header>
     <main>
         <form action="">
-           <h1>Login</h1><br>
-            Email: <br> <input type="text" id="email"><br>
-            <label  for="email" id="email_error"></label><br>
-            Password: <br> <input type="password" id="password"><br>
-            <label  for="password" id="pass_error"></label><br>
-    
-            <button type="submit" id="loginButton">Login</button><br>
-            <p id="no-acc-button">Don't have an account? <a href="register.html">Sign up.</a></p>
+            <h1>Login</h1><br>
+           <div class="email">
+               <label for="Email">Email:</label><br>
+               <input type="email" id="email" >
+           </div><br>
+           <div class="password">
+            <label for="Password">Password:</label><br>
+            <input type="password" id="password" >
+        </div><br>
+        <input type="submit" value="Login" class="btn" id="loginButton">
+        <br>
+            <p id="no-acc-button">Don't have an account? <a href="..\html\register.html">Sign up.</a></p>
         </form>
     </main>
     
@@ -85,7 +87,9 @@
 
         <h3>Copyright &copy; Selmin & Ereza 2021</h3>
     </footer>
+
    
-    
+    <script src="..\js\indexJS.js"></script>
+    <script src="..\js\validation.js"></script>
 </body>
 </html
