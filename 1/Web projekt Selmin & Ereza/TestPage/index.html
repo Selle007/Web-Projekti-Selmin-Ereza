@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTPAGE</title>
+    <title>Web Projekti Selmin & Ereza</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
+    
     <header>
-        <nav>
-            <div class="navBlock">
+        <div class="container">
+            <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="logo.png" alt=""></a>
+                    <img src="logo.png" alt="">
                 </div>
-        
-                <div class="links">
-                    <ul>
-                        <a href="index.html"><li id="l1">Home</li></a>
-                        <a href=""><li id="l2">Books</li></a>
-                        <a href=""><li id="l3">Blog</li></a>
-                        <a href="about.html"><li id="l4">About Us</li></a>
-                        <a href=""><li id="l5">Contact</li></a>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Books</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
-                </div>
-        
-                <div class="navright">
-                    <a href=""><img src="cart.png" alt="" id="cart"></a>
-                    <a href="login.html"><img src="user.png" alt="" id="user"></a>
-                </div>
+                </nav>
+                <a href="cart.html"><img src="cart.png" alt=""></a>
+                <a href="login.html"><img src="user.png" alt=""></a>
+                <img src="menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
             </div>
-            
-        </nav>
-
+        </div>
+        
         <div class="image">
         <div class="search">
-            <input class="searchbar" type="text" placeholder="Search" style="font-size: 15px; padding-left: 15px; color:rgb(0, 94, 255);">
+            <input class="searchbar" type="text" placeholder="Search" style="font-size: 15px; padding-left: 15px; color:black;">
         </div>
 </div>
 
@@ -174,6 +171,7 @@
 
         <div class="comingMain">
             <h2><span>Coming Soon</span></h2><br>
+            
             <div class="comingHead">
                 <!--Product 1-->
                 <div class="comingBlock">
@@ -260,12 +258,12 @@
                 <h2>Subscribe to our Newsletter</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur numquam sapiente accusamus? Odit dolor voluptatem ut, ipsa blanditiis ipsam, atque officiis eos, accusamus aliquid quisquam ab maxime vel quam!</p>
                 <div class="newsSearch">
-                    <input type="text" id="textbox" placeholder="Enter a avalid email address" style="font-size: 15px; padding-left: 15px; color:rgb(0, 94, 255);">
+                    <input type="text" id="textbox" placeholder="Enter a avalid email address:" style="font-size: 15px; padding-left: 15px; color:black;">
                     <a href=""><button id="submit">Submit</button></a>
                 </div>
             </div>
             
-            <img src="hero.jpg" alt="">
+            <img src="newsletter.jpg" alt="">
         </div>
         
                 
@@ -306,6 +304,6 @@
         <h3>Copyright &copy; Selmin & Ereza 2021</h3>
     </footer>
    
-    
+    <script src="indexJS.js"></script>
 </body>
 </html
