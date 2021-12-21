@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family:Century Gothic;
+}
+/*---------------------------------------------------------------------*/
+
+nav{
+    border:1px solid red;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.logo  {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    
+    border:1px solid blue;
+    
+}
+.logo img{
+    width:200px;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.links{
+    
+    text-align: center;
+    border:1px solid blue;
+
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    font-family: Century Gothic;
+}
+
+
+#l2,#l3,#l4,#l5 {
+    border-left: 2px solid black;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.navright{
+    border:1px solid blue;
+
+}
+.navright img{
+    display:inline-block;
+    align-items: center;
+    width: 30px;
+    
+}
+#cart {
+    border-right:2px solid black;
+    padding-right: 25px;
+}
+#user{
+    padding-left: 25px;
+}
+
+
+
+/*---------------------------------------------------------------------*/
+.search{
+    background-image: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+ 
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 94, 255) ;
+}
+
+.search >input[type=text], input::placeholder{
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+    border:none;
+    
+
+}
+
+.search > input::placeholder{
+    color:#555 ;
+    padding-left:2px;
+}
+button{
+    background-color:rgb(0, 94, 255) ;
+    border: none;
+    width: 90px;
+    height: 50px;
+
+}
+button> img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+/*------------BestSeller--------------------*/
+.bestseller{
+    margin:0 auto;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    max-width: 1400px;
+    border: blue 5px solid;
+}
+.products{
+    display: flex;
+    flex-wrap:wrap ;
+    border: solid red 3px;
+    justify-content: center;
+    padding:10px;
+}
+
+.productblock{
+    display: flex;
+    align-items: center;
+    font-family:Century Gothic;
+    flex-basis: 33%;
+    padding: 10px;
+    min-width: 200px;
+    max-width:380px;
+    max-height:300px;
+    margin: 10px;
+    border: solid 2px blue;
+    justify-content: center;
+    
+}
+
+
+
+.productImg>img{
+    border: green 2px solid;
+    width: 200px;
+}
+.productText{
+    font-size:20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+#productName{
+    font-size:20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#author{
+    font-size:11px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+#textDesc{
+    font-size:11px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+#price{
+    font-size:20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.rating {
+    font-size:20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/*-------------------------------------------------------------*/
+.comingMain{
+    margin:0 auto;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    max-width: 1400px;
+    border: blue 5px solid;
+}
+.comingHead{
+    display: flex;
+    border: solid red 3px;
+    justify-content: space-between;
+
+}
+
+.comingBlock{
+ display: flex;
+ flex-direction:column;
+ border: blue 2px solid;
+ width: 300px;
+ justify-content: center;
+    
+}
+
+
+
+.comingImg>img{
+    border: green 2px solid;
+    width: 300px;
+}
+.comingText{
+    
+    font-size:20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+#productName{
+    font-size:20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#author{
+    font-size:11px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+#textDesc{
+    font-size:11px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+#price{
+    font-size:20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.rating {
+    font-size:40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
