@@ -59,9 +59,10 @@ a{
 header{
     background-color: #14279B;
 }
-.container a:hover{
+.container img:hover{
     transform: scale(1.15);
     transition: 0.1s;
+    
 }
 nav ul li:hover{
     transform: scale(1.1);
@@ -69,18 +70,20 @@ nav ul li:hover{
 }
 
 /*SLIDER---------------------------------------------------------------------*/
-.image{
-    background-image: url(/TestPage/Img/banner.jpg);
-    background-color: #cccccc;
+
+header .image {
+    background-image: url("../Img/banner.jpg");
     height: 300px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.search >input[type=text], input::placeholder{
+  }
+
+.image .search input[type=text], input::placeholder{
     height: 50px;
     width: 400px;
     cursor: pointer;
@@ -97,9 +100,7 @@ nav ul li:hover{
     transition: all 250ms ease-in-out;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
-
 
 
 
@@ -376,10 +377,9 @@ main{
     margin-bottom: 25px;
     background-color:aliceblue ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-    
 }
 .newsText{
-    border: solid 1px red;
+   /* border: solid 1px red;*/
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -395,7 +395,7 @@ main{
     width: 50%;
 }
 .newsSearch > #textbox{
-    width: 50%;
+    width: 400px;
     height: 30px;
     
 }
@@ -461,14 +461,12 @@ footer ul li{
 
 /*------------------------RESPONSIVE------------------------*/
 @media only screen and (min-width:1251px) {
-    header .container .menuIcon{
+    .navbar .menuIcon{
         width: 28px;
         margin-right:25px;
-        display: none;
+        display:none;
     }
 }
-
-
 
 @media only screen and (max-width:1250px) {
     .navbar{
