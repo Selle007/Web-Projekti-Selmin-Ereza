@@ -5,42 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TESTPAGE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="loginJS.js">
+    <link rel="stylesheet" href="..\css\style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="aboutStyle.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="navBlock">
-                <div class="logo">
-                    <a href="index.html"><img src="logo.png" alt=""></a>
-                </div>
-        
-                <div class="links">
-                    <ul>
-                        <a href="index.html"><li id="l1">Home</li></a>
-                        <a href=""><li id="l2">Books</li></a>
-                        <a href=""><li id="l3">Blog</li></a>
-                        <a href="about.html"><li id="l4">About Us</li></a>
-                        <a href=""><li id="l5">Contact</li></a>
-                    </ul>
-                </div>
-        
-                <div class="navright">
-                    <a href=""><img src="cart.png" alt="" id="cart"></a>
-                    <a href="login.html"><img src="user.png" alt="" id="user"></a>
-                </div>
-            </div>
-            
-        </nav>
-
-    </header>
-    <main>
-        
-    </main>
+    <link rel="stylesheet" href="..\css\aboutStyle.css">
+</head><body>
     
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="..\img\logo.png" alt="">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Books</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="..\Img\cart.png" alt=""></a>
+                <a href="login.html"><img src="..\Img\user.png" alt=""></a>
+                <img src="..\Img\menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
+            </div>
+        </div>
+        
+        
+
+</header>
+    
+<main>
+
+    <h1>Welcome to the Bookstore</h1>
+    <div class="cont1">
+        <img src="..\Img\books.jpg" alt="">
+        <div class="text">
+        <h1>About Us</h1>
+        <p>We are a small startup company based in Kosovo. We belive that books are essential for human developement and are a grat source of knowledge. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ad possimus deserunt provident eveniet iusto! Provident magnam sit ad qui quod expedita consequatur minima optio iure illo. Nisi, neque quod?</p>
+        <p><strong>Need more information?<a href="..\html\contact.html">  Contact us.</a></strong> </p>  
+        </div>
+        <br>
+        
+    </div>
+</main>
+  
+
     <footer>
         <div class="text">
             <div class="fText">
@@ -77,6 +87,7 @@
         <h3>Copyright &copy; Selmin & Ereza 2021</h3>
     </footer>
    
-    
+    <script src="..\js\indexJS.js"></script>
+    <script src="..\js\slider.js"></script>
 </body>
 </html
