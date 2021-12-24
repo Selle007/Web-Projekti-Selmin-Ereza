@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     font-family:Century Gothic;
-    background-color: #E6E6E6;
+    background-color: #FFF;
 
     
 }
@@ -34,7 +34,7 @@ main form{
     box-shadow: 1px 0 19px 2px rgba(0, 0, 0, 0.5);
 
     border-radius: 15px;
-    width:60%;
+    width:40%;
     margin:0 auto;
     padding:40px;
     margin-top: 25px;
@@ -52,7 +52,7 @@ form input{
     height:40px;
     border: none;
     border-bottom: solid black 1px;
-    background-color: #E6E6E6;
+    background-color: #FFF;
     font-size: 20px;
 }
 
@@ -61,7 +61,7 @@ form input{
     height:40px;
     border: none;
     border-bottom: solid black 1px;
-    background-color: #E6E6E6;
+    background-color: #FFF;
     font-size: 20px;
 }
 #email{
@@ -69,7 +69,7 @@ form input{
     height:40px;
     border: none;
     border-bottom: solid black 1px;
-    background-color: #E6E6E6;
+    background-color: #FFF;
     font-size: 20px;
 }
 
@@ -78,7 +78,7 @@ form input{
     height:40px;
     border: none;
     border-bottom: solid black 1px;
-    background-color: #E6E6E6;
+    background-color: #FFF;
     font-size: 20px;
 
 }
@@ -87,7 +87,7 @@ form input{
     height:40px;
     border: none;
     border-bottom: solid black 1px;
-    background-color: #E6E6E6;
+    background-color: #FFF;
     font-size: 20px;
 
 }
@@ -99,7 +99,7 @@ form input{
     border: none;
     border-bottom: solid #14279B 1px;
     
-    background-color:#E6E6E6;
+    background-color:#FFF;
     font-size: 20px;
     cursor: pointer;
     color:#14279B;
@@ -115,7 +115,7 @@ form input{
     background-color:#14279B;
     font-size: 20px;
     cursor: pointer;
-    color:#E6E6E6;
+    color:#FFF;
     transition: 0.5s;
 }
 input.notValid {
@@ -126,7 +126,7 @@ input.notValid {
 input.Valid {
     color: #14279B !important;
     border-bottom: 2px solid #14279B !important;
-    background-color: #E6E6E6;
+    background-color: #FFF;
   }
 
 
@@ -148,7 +148,7 @@ footer{
 footer h3{
     margin: 0 auto;
     padding:25px;
-    color:#E6E6E6;
+    color:#FFF;
     
 }
 footer h4{
@@ -158,7 +158,7 @@ footer h4{
 footer .text{
     display: flex;
     justify-content: space-evenly;
-    color: #E6E6E6;
+    color: #FFF;
 
 }
 footer .fText{
@@ -204,7 +204,7 @@ footer ul li{
     }
     nav ul li{
         font-family: Century Gothic;
-        color: #E6E6E6;
+        color: #FFF;
         
     }
  
