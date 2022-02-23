@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TESTPAGE</title>
     <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="..\css\loginStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="..\css\aboutStyle.css">
-</head><body>
     
+</head>
+<body>
     <header>
         <div class="container">
             <div class="navbar">
@@ -18,39 +19,39 @@
                 </div>
                 <nav>
                     <ul id="menuItems">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="..\html\index.html">Home</a></li>
                         <li><a href="">Books</a></li>
                         <li><a href="">Blog</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="..\html\about.html">About Us</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
-                <a href="cart.html"><img src="..\Img\cart.png" alt=""></a>
-                <a href="login.html"><img src="..\Img\user.png" alt=""></a>
+                <a href="..\html\cart.html"><img src="..\Img\cart.png" alt=""></a>
+                <a href="..\html\login.html"><img src="..\Img\user.png" alt=""></a>
                 <img src="..\Img\menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
             </div>
         </div>
-        
-        
+
+</div>
 
 </header>
-    
-<main>
-
-    <h1>Welcome to the Bookstore</h1>
-    <div class="cont1">
-        <img src="..\Img\books.jpg" alt="">
-        <div class="text">
-        <h1>About Us</h1>
-        <p>We are a small startup company based in Kosovo. We belive that books are essential for human developement and are a grat source of knowledge. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ad possimus deserunt provident eveniet iusto! Provident magnam sit ad qui quod expedita consequatur minima optio iure illo. Nisi, neque quod?</p>
-        <p><strong>Need more information?<a href="..\html\contact.html">  Contact us.</a></strong> </p>  
-        </div>
+    <main>
+        <form action="">
+            <h1>Login</h1><br>
+           <div class="email">
+               <label for="Email">Email:</label><br>
+               <input type="email" id="email" >
+           </div><br>
+           <div class="password">
+            <label for="Password">Password:</label><br>
+            <input type="password" id="password" >
+        </div><br>
+        <input type="submit" value="Login" class="btn" id="loginButton">
         <br>
-        
-    </div>
-</main>
-  
-
+            <p id="no-acc-button">Don't have an account? <a href="..\html\register.html">Sign up.</a></p>
+        </form>
+    </main>
+    
     <footer>
         <div class="text">
             <div class="fText">
@@ -86,8 +87,9 @@
 
         <h3>Copyright &copy; Selmin & Ereza 2021</h3>
     </footer>
+
    
     <script src="..\js\indexJS.js"></script>
-    <script src="..\js\slider.js"></script>
+    <script src="..\js\validation.js"></script>
 </body>
 </html

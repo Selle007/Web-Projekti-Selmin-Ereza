@@ -12,7 +12,7 @@ main h1{
 
 
 
-.cont1{
+.slider{
  display: flex;
  flex-wrap: wrap;
  justify-content:space-evenly;
@@ -22,12 +22,12 @@ main h1{
  margin: 0 auto;
  margin-top: 50px;
 }
-.cont1 img {
+.slider img {
  /*border: solid red 1px;*/
- max-width: 60%;
+ max-width: 70%;
 }
 
-.cont1 .text{
+.text{
  /*border: solid red 1px;*/
 
 display: flex;
@@ -40,19 +40,19 @@ text-align: justify;
 
 }
 
-.cont1 .text p{
+.text p{
   padding-top: 25px;
   max-width: 100%;
 }
-.cont1 .text h1{
+.text h1{
   text-align: left;
 }
 
 
 
 @media only screen and (max-width:1200px) {
-  .cont1 .text{
-    border: solid red 1px;
+.text{
+  /*  border: solid red 1px;*/
    
    display: flex;
    
@@ -66,12 +66,12 @@ text-align: justify;
    
    
    }
-   .cont1 img {
-    border: solid red 1px;
+   .slider img {
+   /* border: solid red 1px;*/
     max-width: 100%;
    }
 
-   .cont1 .text p{
+   .text p{
     padding-top: 25px;
     max-width: 100%;
   }
