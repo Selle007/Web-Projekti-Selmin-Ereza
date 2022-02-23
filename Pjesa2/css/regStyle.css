@@ -82,7 +82,7 @@ form input{
     font-size: 20px;
 
 }
-#confirm-password{
+#role{
     width: 350px;
     height:40px;
     border: none;
@@ -91,6 +91,7 @@ form input{
     font-size: 20px;
 
 }
+
 
 #loginButton{
     width: 360px;

@@ -27,11 +27,12 @@
 }
 .sliderImages{
     width: 300%;
+    height: 300px;
     
     
 }
 .sliderImages img{
-    width: 33.33333%;
+    width: 100%;
     transition: 1s;
 }
 .navbar{
