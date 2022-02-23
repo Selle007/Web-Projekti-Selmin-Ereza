@@ -48,13 +48,17 @@
         </div>
         
         <br>
-        
-    </div>
-    <div class="text">
+        <br>
+        <br>
+        <br>
+        <div class="text">
         <h1>About Us</h1>
         <p>We are a small startup company based in Kosovo. We belive that books are essential for human developement and are a grat source of knowledge. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ad possimus deserunt provident eveniet iusto! Provident magnam sit ad qui quod expedita consequatur minima optio iure illo. Nisi, neque quod?</p>
         <p><strong>Need more information?<a href="..\html\contact.html">  Contact us.</a></strong> </p>  
         </div>
+        
+    </div>
+    
 </main>
   
 

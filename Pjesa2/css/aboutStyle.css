@@ -27,8 +27,8 @@ main h1{
  max-width: 70%;
 }
 
-.text{
- /*border: solid red 1px;*/
+main > .text{
+border: solid red 1px;
 
 display: flex;
 flex-direction: column;
