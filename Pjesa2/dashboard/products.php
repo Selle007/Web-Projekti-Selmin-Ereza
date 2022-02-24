@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Products</title>
+    <title>Products</title>
+    
     <link rel="stylesheet" href="..\css\dashboard.css">
 </head>
 <body>
@@ -26,9 +27,9 @@
     ?>
     <div class="rightMenu">
         <div class="cont1">
-            <a href="../dashboard/addProduct.php"><input type="submit" value="Products"></a>
-            <a href=""><input type="submit" value="Orders"></a>
-            <a href=""><input type="submit" value="Users"></a>
+            <a href="../dashboard/addProduct.php"><input type="submit" value="Add Products"></a>
+            <a href=""><input type="submit" value="All Products"></a>
+            
             
         </div>
     </div>

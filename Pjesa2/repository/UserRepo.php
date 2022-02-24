@@ -28,14 +28,14 @@ class UserRepo{
         echo '<script>alert("Registered!");</script>';
     }
 
-    function getStudents(){
+    function getUsers(){
         $conn= $this->connection;
 
-        $sql= "SELECT * FROM student";
+        $sql= "SELECT * FROM user";
 
         $statement= $conn->query($sql);
-        $students = $statement->fetchAll();
-        return $students;
+        $users = $statement->fetchAll();
+        return $users;
     }
  
 } 
