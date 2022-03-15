@@ -15,7 +15,7 @@
             <li><a href="../dashboard/products.php">Products</a></li>
             <li><a href="">Orders</a></li>
             <li><a href="">Completed</a></li>
-            <li><a href="">Users</a></li>
+            <li><a href="../dashboard/users.php">Users</a></li>
 
 
             <li><a href="">Log Out</a></li>

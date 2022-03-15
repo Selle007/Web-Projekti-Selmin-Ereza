@@ -20,6 +20,7 @@
                         <li><a href="">Blog</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="">Contact</a></li>
+                        <li><a href="dashboard.php" class="<?php echo $hide ?>">Dashboard</a></li>
                     </ul>
                 </nav>
                 <a href="cart.html"><img src="..\Img\cart.png" alt=""></a>

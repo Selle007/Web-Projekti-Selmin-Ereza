@@ -1,3 +1,16 @@
+<?php 
+session_start();
+
+if(!isset($_SESSION['username'])){
+    header("Location: ../view/login.php");
+}
+else{
+    if($_SESSION['role'] != "admin" ){
+        header("location: home.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,3 +49,6 @@
     
 </body>
 </html>
+<?php
+}
+?>

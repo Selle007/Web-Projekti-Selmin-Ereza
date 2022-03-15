@@ -1,3 +1,17 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])){
+        header("Location: login.php" );
+    }
+    else{
+        if($_SESSION['role']== "admin"){
+            $hide = "";
+        }else{
+            $hide = "hide";
+        }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,3 +49,7 @@ include('footer.php');
 </body>
 
 </html>
+
+<?php
+}
+?>

@@ -37,6 +37,29 @@ class UserRepo{
         $users = $statement->fetchAll();
         return $users;
     }
+
+    function getUserById($id){
+        $conn= $this->connection;
+
+        $sql= "SELECT * FROM user WHERE id='$id'";
+
+        $statement= $conn->query($sql);
+        $user = $statement->fetch(PDO::FETCH_ASSOC);
+        return $user;
+    }
+
+    function updateUser($id,$name,$username,$email,$password,$role){
+        $conn= $this->connection;
+
+        $sql = "UPDATE user SET name=?, username=?, email=?, password=?, role=? where id=?";
+        
+        $statement= $conn->prepare($sql);
+        $statement->execute([$name,$username,$email,$password,$role,$id]);
+        
+
+        echo '<script>alert("Updated!");</script>';
+    }
+
  
 } 
 

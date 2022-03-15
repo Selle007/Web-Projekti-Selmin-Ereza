@@ -28,7 +28,7 @@
     <div class="rightMenu">
         <div class="cont1">
             <a href="../dashboard/addProduct.php"><input type="submit" value="Add Products"></a>
-            <a href=""><input type="submit" value="All Products"></a>
+            <a href="../dashboard/allProducts.php"><input type="submit" value="All Products"></a>
             
             
         </div>
