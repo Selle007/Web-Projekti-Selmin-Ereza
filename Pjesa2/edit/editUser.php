@@ -72,6 +72,7 @@ if(isset($_POST['saveBtn'])){
     $role=$_POST['role'];
 
     $userR->updateUser($id,$name,$username,$email,$password,$role);
+    header('location:../dashboard/users.php');
 }
 
 

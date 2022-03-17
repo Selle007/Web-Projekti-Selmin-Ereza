@@ -30,7 +30,6 @@
             <a href="../dashboard/addProduct.php"><input type="submit" value="Add Products"></a>
             <a href="../dashboard/allProducts.php"><input type="submit" value="All Products"></a>
             
-            
         </div>
     </div>
 </main>

@@ -66,7 +66,7 @@
                 <td>$user[password]</td>
                 <td>$user[role]</td>
                 <td><a href='../edit/editUser.php?id=$user[id]'>Edit</a></td>
-                <td><a href=''>Delete</a></td>
+                <td><a href='../edit/deleteUser.php?id=$user[id]'>Delete</a></td>
             </tr>
             
             ";

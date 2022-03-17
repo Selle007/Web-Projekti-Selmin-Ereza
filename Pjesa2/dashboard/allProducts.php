@@ -10,6 +10,10 @@
     <style>
         table,th,td {
             border:solid 1px;
+            color:#000;
+        }
+        td>a{
+            color:#000;
         }
     </style>
 </head>
@@ -41,6 +45,8 @@
             <th>Product Description</th>
             <th>Price</th>
             <th>Category</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
 
         <?php
@@ -59,6 +65,8 @@
                 <td>$product[pdesc]</td>
                 <td>$product[price]</td>
                 <td>$product[category]</td>
+                <td><a href='../edit/editProduct.php?pid=$product[pid]'>Edit</a></td>
+                <td><a href='../edit/deleteProduct.php?pid=$product[pid]'>Delete</a></td>
             </tr>
             
             ";

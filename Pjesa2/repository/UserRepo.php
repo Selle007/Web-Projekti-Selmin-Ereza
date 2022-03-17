@@ -59,6 +59,17 @@ class UserRepo{
 
         echo '<script>alert("Updated!");</script>';
     }
+    function deleteUser($id){
+        $conn= $this->connection;
+
+        $sql = "DELETE FROM user where id=?";
+        
+        $statement= $conn->prepare($sql);
+        $statement->execute([$id]);
+        
+
+        echo '<script>alert("Deleted!");</script>';
+    }
 
  
 } 

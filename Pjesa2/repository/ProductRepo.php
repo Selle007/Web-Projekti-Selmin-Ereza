@@ -37,6 +37,40 @@ class ProductRepo{
         $products = $statement->fetchAll();
         return $products;
     }
+
+    function getProductById($pid){
+        $conn= $this->connection;
+
+        $sql= "SELECT * FROM product WHERE pid='$pid'";
+
+        $statement= $conn->query($sql);
+        $product = $statement->fetch(PDO::FETCH_ASSOC);
+        return $product;
+    }
+
+    function updateProduct($pid,$pname,$aname,$pdesc,$price,$category){
+        $conn= $this->connection;
+
+        $sql = "UPDATE product SET pname=?, aname=?, pdesc=?, price=?, category=? where pid=?";
+        
+        $statement= $conn->prepare($sql);
+        $statement->execute([$pname,$aname,$pdesc,$price,$category,$pid]);
+        
+
+        echo '<script>alert("Updated!");</script>';
+    }
+
+    function deleteProduct($pid){
+        $conn= $this->connection;
+
+        $sql = "DELETE FROM product where pid=?";
+        
+        $statement= $conn->prepare($sql);
+        $statement->execute([$pid]);
+        
+
+        echo '<script>alert("Deleted!");</script>';
+    }
  
 } 
 
