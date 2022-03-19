@@ -7,6 +7,7 @@ class Product extends dbConnect{
     private $pdesc;
     private $price;
     private $category;
+
     
     private $dbconn;
    
@@ -58,6 +59,7 @@ class Product extends dbConnect{
     public function getCategory(){
         return $this->category;
     }
+
     
 }
 

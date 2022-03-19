@@ -1,5 +1,5 @@
 <?php
-include_once '../database/dbConnect.php';
+include 'C:\xampp\htdocs\WEB PROJEKTI\database\dbConnect.php';
 
 class ProductRepo{
     private $connection;
@@ -46,6 +46,25 @@ class ProductRepo{
         $statement= $conn->query($sql);
         $product = $statement->fetch(PDO::FETCH_ASSOC);
         return $product;
+    }
+    function getBestSeller(){
+        $conn= $this->connection;
+
+        $sql= "SELECT * FROM product where category= 'Best Seller'";
+
+        $statement= $conn->query($sql);
+        $products = $statement->fetchAll();
+        return $products;
+    }
+
+    function getComingSoon(){
+        $conn= $this->connection;
+
+        $sql= "SELECT * FROM product where category= 'Coming Soon'";
+
+        $statement= $conn->query($sql);
+        $products = $statement->fetchAll();
+        return $products;
     }
 
     function updateProduct($pid,$pname,$aname,$pdesc,$price,$category){

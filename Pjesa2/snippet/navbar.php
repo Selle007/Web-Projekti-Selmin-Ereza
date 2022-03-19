@@ -15,10 +15,10 @@
                 </div>
                 <nav>
                     <ul id="menuItems">
-                        <li><a href="../web/main.php">Home</a></li>
+                        <li><a href="main.php">Home</a></li>
                         <li><a href="">Books</a></li>
                         <li><a href="">Blog</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.php">About Us</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="dashboard.php" class="<?php echo $hide ?>">Dashboard</a></li>
                     </ul>

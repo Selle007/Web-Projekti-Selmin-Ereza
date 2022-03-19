@@ -23,6 +23,7 @@ $product = $prodR->getProductById($prodId);
         td>a{
             color:#000;
         }
+        
     </style>
 </head>
 <body>

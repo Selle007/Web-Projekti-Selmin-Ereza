@@ -1,17 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['username'])){
-        header("Location: login.php" );
-    }
-    else{
-        if($_SESSION['role']== "admin"){
-            $hide = "";
-        }else{
-            $hide = "hide";
-        }
-    
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Projekti Selmin & Ereza - Bookstore</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   
 
 </head>
@@ -28,7 +14,7 @@
 <body>
 
 <?php
-include('navbar.php');
+include('snippet/navbar.php');
 ?>
     
     <header>
@@ -40,16 +26,77 @@ include('navbar.php');
         </div>
     </header>
 
+    <br>
+    
+    <div class="bestseller">
+    <h2><span>Best Sellers</span></h2>
+    <br>
+    <?php
+     include_once "repository/ProductRepo.php";
+
+    $prodR = new ProductRepo;
+
+    $products = $prodR->getBestSeller(); 
+
+     foreach($products as $product): 
+    ?>
+            <div class="products">
+                <div class="productblock">
+                    <img src="Img/<?=$product['pname']?>.jpg" alt="">
+                    <div class="productRight">
+                        <div class="productText">
+                            <p id="productName"><?=$product['pname']?></p>
+                            <p id="author"><?=$product['aname']?></p>
+                            <p id="textDesc"><Strong><?=$product['pdesc']?> 
+                                </Strong></p>
+                        </div>
+                        <div class="price">
+                            <p id="price"><strong><?=$product['price']?></strong></p><br>
+                            <div class="buttons">
+                                <button id="submit">Add to Cart</button>
+                                <img src="Img\wishlist.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+        </div>
+        <?php endforeach; ?>
+<!------------------------------------------------------>
+
+    <div class="comingMain">    
+            <h2><span>Coming Soon</span></h2><br>
+            <?php
+                include_once "repository/ProductRepo.php";
+
+                $prodR = new ProductRepo;
+
+                $products = $prodR->getComingSoon(); 
+
+                foreach($products as $product): 
+            ?>
+            <div class="comingHead">
+                
+                <div class="comingBlock">
+                    <img src="Img/<?=$product['pname']?>.jpg" alt="">
+                        <div class="comingText">
+                            <p id="productName"><?=$product['pname']?></p>
+                            <p id="author"><?=$product['aname']?></p>
+                            <p id="textDesc"><Strong><?=$product['pdesc']?></Strong></p>
+                            
+                        </div>
+                </div>
+                <?php endforeach; ?>
+                
+        <!------------------------------------------------------>
+
     
 
    
 <?php
-include('footer.php');
+include('snippet/footer.php');
 ?>
 </body>
 
 </html>
 
-<?php
-}
-?>

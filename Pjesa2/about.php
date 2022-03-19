@@ -5,32 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="..\css\aboutStyle.css">
-    <link rel="stylesheet" href="..\css\slider.css">s
+    <link rel="stylesheet" href="css\aboutStyle.css">
+    <link rel="stylesheet" href="css\slider.css">
 </head>
 <body>
-<header>
-        <div class="container">
-            <div class="navbar">
-                
-                <nav>
-                    <ul id="menuItems">
-                        <li><a href="..\html\index.html">Home</a></li>
-                        <li><a href="">Books</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="..\html\about.html">About Us</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-                
-            </div>
-        </div>
+<?php
+include('snippet/navbar.php');
+?>
 
-</div>
-
-</header>
 
     
 <main>
@@ -63,7 +47,7 @@
   
 
 <?php
-include('footer.php');
+include('snippet/footer.php');
 ?>
     <script src="..\js\indexJS.js"></script>
     <script>

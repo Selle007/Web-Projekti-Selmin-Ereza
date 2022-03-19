@@ -1,15 +1,4 @@
-<?php 
-session_start();
 
-if(!isset($_SESSION['username'])){
-    header("Location: ../view/login.php");
-}
-else{
-    if($_SESSION['role'] != "admin" ){
-        header("location: home.php");
-    }
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,9 +28,9 @@ else{
     ?>
     <div class="rightMenu">
         <div class="cont1">
-            <a href="../dashboard/addProduct.php"><input type="submit" value="Products"></a>
-            <a href=""><input type="submit" value="Orders"></a>
-            <a href=""><input type="submit" value="Users"></a>
+            <a href="../dashboard/products.php"><input type="submit" value="Products"></a>
+            <a href="../dashboard/orders.php"><input type="submit" value="Orders"></a>
+            <a href="../dashboard/users.php"><input type="submit" value="Users"></a>
             
         </div>
     </div>
@@ -49,6 +38,3 @@ else{
     
 </body>
 </html>
-<?php
-}
-?>

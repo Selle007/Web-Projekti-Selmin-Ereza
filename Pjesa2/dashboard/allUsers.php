@@ -43,7 +43,7 @@
             <th>Name</th>
             <th>Username</th>
             <th>Email</th>
-            <th>Password</th>
+            
             <th>Role</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -63,10 +63,10 @@
                 <td>$user[name]</td>
                 <td>$user[username]</td>
                 <td>$user[email]</td>
-                <td>$user[password]</td>
+                
                 <td>$user[role]</td>
                 <td><a href='../edit/editUser.php?id=$user[Id]'>Edit</a></td>
-                <td><a href=''>Delete</a></td>
+                <td><a href='../edit/deleteuSER.php?id=$user[Id]'>Delete</a></td>
             </tr>
             
             ";

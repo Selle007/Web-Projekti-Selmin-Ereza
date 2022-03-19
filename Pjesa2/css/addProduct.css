@@ -48,9 +48,55 @@
     background-color: #14279B;
     color: #FFF;
 }
+.cont1 #saveBtn {
+    background-color: #14279B;
+    color: #FFF;
+}
 form input{
     margin:10px;
 }
+
+
+table{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+table tr th{
+    background-color: #14279B;
+    color: #FFF;
+    border-radius: 2px;
+    width: 150px;
+    height: 50px;
+    border:solid #555 1px;
+}
+
+table th:nth-child(1){
+width: 5%;
+}
+table th:nth-child(2){
+width: 20%;
+}
+table th:nth-child(3){
+width: 20%;
+}
+table th:nth-child(4){
+width: 40%;
+}
+table th:nth-child(5){
+width: 10%;
+}
+table tr td{
+    
+    border-radius: 2px;
+    width: 150px;
+    height: 50px;
+    border:solid #555 1px;
+}
+table tr td a{
+    color:black;
+}
+
 /*------------------------------------------*/
 *{
     margin: 0;
