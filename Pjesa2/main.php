@@ -31,41 +31,45 @@ include('snippet/navbar.php');
     <div class="bestseller">
     <h2><span>Best Sellers</span></h2>
     <br>
-    <?php
-     include_once "repository/ProductRepo.php";
+    <div class="products">
+        <?php
+        include_once "repository/ProductRepo.php";
 
-    $prodR = new ProductRepo;
+        $prodR = new ProductRepo;
 
-    $products = $prodR->getBestSeller(); 
+        $products = $prodR->getBestSeller(); 
 
-     foreach($products as $product): 
-    ?>
-            <div class="products">
-                <div class="productblock">
-                    <img src="Img/<?=$product['pname']?>.jpg" alt="">
-                    <div class="productRight">
-                        <div class="productText">
-                            <p id="productName"><?=$product['pname']?></p>
-                            <p id="author"><?=$product['aname']?></p>
-                            <p id="textDesc"><Strong><?=$product['pdesc']?> 
-                                </Strong></p>
-                        </div>
-                        <div class="price">
-                            <p id="price"><strong><?=$product['price']?></strong></p><br>
-                            <div class="buttons">
-                                <button id="submit">Add to Cart</button>
-                                <img src="Img\wishlist.png" alt="">
+        foreach($products as $product): 
+        ?>
+                
+                    <div class="productblock">
+                        <img src="Img/<?=$product['pname']?>.jpg" alt="">
+                        <div class="productRight">
+                            <div class="productText">
+                                <p id="productName"><?=$product['pname']?></p>
+                                <p id="author"><?=$product['aname']?></p>
+                                <p id="textDesc"><Strong><?=$product['pdesc']?> 
+                                    </Strong></p>
+                            </div>
+                            <div class="price">
+                                <p id="price"><strong><?=$product['price']?></strong></p><br>
+                                <div class="buttons">
+                                    <button id="submit">Add to Cart</button>
+                                    <img src="Img\wishlist.png" alt="">
+                                </div>
                             </div>
                         </div>
+                    
                     </div>
-                   
-                </div>
-        </div>
-        <?php endforeach; ?>
+            
+            <?php endforeach; ?>
+    </div>
+    
 <!------------------------------------------------------>
 
     <div class="comingMain">    
             <h2><span>Coming Soon</span></h2><br>
+            <div class="comingHead">
             <?php
                 include_once "repository/ProductRepo.php";
 
@@ -75,7 +79,7 @@ include('snippet/navbar.php');
 
                 foreach($products as $product): 
             ?>
-            <div class="comingHead">
+            
                 
                 <div class="comingBlock">
                     <img src="Img/<?=$product['pname']?>.jpg" alt="">
@@ -87,6 +91,7 @@ include('snippet/navbar.php');
                         </div>
                 </div>
                 <?php endforeach; ?>
+            </div>
                 
         <!------------------------------------------------------>
 
