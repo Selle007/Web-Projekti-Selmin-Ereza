@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +10,26 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="..\img\logo.png" alt="">
-                </div>
-                <nav>
-                    <ul id="menuItems">
-                        <li><a href="main.php">Home</a></li>
-                        <li><a href="">Books</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="about.php">About Us</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="dashboard.php" class="<?php echo $hide ?>">Dashboard</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html"><img src="..\Img\cart.png" alt=""></a>
-                <a href="login.html"><img src="..\Img\user.png" alt=""></a>
-                <img src="..\Img\menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
+    <div class="navcont">
+        <div class="navbar">
+            <div class="logo">
+                <img src="..\img\logo.png" alt="">
             </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="../view/main.php">Home</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="../view/about.php">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="../dashboard/dashboard.php" class="<?php echo $hide ?>">Dashboard</a></li>
+                    <li><a href="../controller/logout.php">Log Out</a></li>
+                </ul>
+            </nav>
+            <a href=""><img src="../Img/cart.png" alt=""></a>
+            <a href="../view/login.php"><img src="../Img/user.png" alt=""></a>
+            <img src="..\Img\menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
         </div>
+    </div>
 </body>
 </html>

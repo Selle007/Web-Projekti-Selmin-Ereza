@@ -71,8 +71,44 @@ class UserRepo{
         echo '<script>alert("Deleted!");</script>';
     }
 
- 
-} 
+    function login(){
+
+        $conn = $this->connection;
+        $email=$_POST['email'];
+        $password=$_POST['password'];
+           $sql = "SELECT username, role, password FROM user WHERE email='$email'";
+        $statement = $conn->query($sql);
+           $user = $statement->fetch(PDO::FETCH_ASSOC);
+
+        if($statement->rowCount() < 1){
+               echo "<script> alert('Email entered incorrectly!'); </script>";
+        }
+        else{
+               if ($password != $user['password']) {
+                   echo "<script> alert('Password entered incorrectly!'); </script>";
+               }
+                else{
+                    session_start();
+                    $_SESSION['username'] = $user['username'];
+                    $_SESSION['role'] == "admin";
+                    
+                    header("location:../dashboard/dashboard.php");
+                    }
+                    else {
+                        session_start();
+                        $_SESSION['username'] = $user['username'];
+                        $_SESSION['role'] == "customer";
+                        
+                        header("location:../view/main.php");
+                    }
+                    
+                }
+                
+            }
+        }
+    } 
+
+
 
 
 

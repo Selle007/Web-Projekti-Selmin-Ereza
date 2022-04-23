@@ -1,3 +1,8 @@
+<?php
+include_once '../controller/loginController.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,19 +18,19 @@
 <body>
 <?php  include('../snippet/navbar.php');?>
     <main>
-        <form action="">
+        <form action="" method="POST">
             <h1>Login</h1><br>
            <div class="email">
                <label for="Email">Email:</label><br>
-               <input type="email" id="email" >
+               <input type="email" id="email" name="email" >
            </div><br>
            <div class="password">
             <label for="Password">Password:</label><br>
-            <input type="password" id="password" >
+            <input type="password" id="password" name="password">
         </div><br>
-        <input type="submit" value="Login" class="btn" id="loginButton">
+        <input type="submit" value="Login" class="btn" id="loginButton" name="loginBtn">
         <br>
-            <p id="no-acc-button">Don't have an account? <a href="..\html\register.html">Sign up.</a></p>
+            <p id="no-acc-button">Don't have an account? <a href="register.php">Sign up.</a></p>
         </form>
     </main>
     <?php  include('../snippet/footer.php');?>

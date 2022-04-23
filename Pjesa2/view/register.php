@@ -36,7 +36,7 @@ include('../snippet/navbar.php');
 
             <input type="submit" value="Register" class="btn" id="loginButton" name="registerBtn">
             <br>
-            <p id="no-acc-button">Already have an account? <a href="..\html\login.html">Sign in.</a></p>
+            <p id="no-acc-button">Already have an account? <a href="../view/login.php">Sign in.</a></p>
         </form>
     </main>
 

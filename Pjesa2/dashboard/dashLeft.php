@@ -19,7 +19,7 @@
             <li><a href="../dashboard/users.php">Users</a></li>
 
 
-            <li><a href="">Log Out</a></li>
+            <li><a href="../controller/logout.php">Log Out</a></li>
     
 
         </ul>
