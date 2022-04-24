@@ -20,7 +20,10 @@ include('../snippet/navbar.php');
     
     <header>
         <div class="image">
-            
+            <div class="search">
+                <input class="searchbar" type="text" placeholder="Search"
+                    style="font-size: 15px; padding-left: 15px; color:black;">
+            </div>
         </div>
     </header>
 

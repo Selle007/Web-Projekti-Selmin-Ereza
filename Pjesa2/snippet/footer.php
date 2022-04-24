@@ -11,12 +11,12 @@
 <footer>
         <div class="text">
             <div class="fText">
-                <h4>Company</h4><br>
+                <h4>Bookstore</h4><br>
                 <ul>
-                    <li>About Us</li>
-                    <li>Our Services</li>
-                    <li>Contacts</li>
-                    <li>Blog</li>
+                    <li><a href="../view/about.php">About Us</a></li>
+                    <li><a href="">Our Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
             <div class="fText">

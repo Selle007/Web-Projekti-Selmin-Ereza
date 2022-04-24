@@ -10,12 +10,10 @@
 <div class="leftMenu">
         <ul>
 
-            <li><strong>Hello, ADMIN</strong> </li>
-            <li><a href=".. /main.php">Main Page</a></li>
+            <li><strong>Welcome, <?php echo $_SESSION['username'] ?></strong> </li>
+            <li><a href="../view/main.php">Main Page</a></li>
             <li><a href="../dashboard/dashboard.php">Dashboard</a></li>
             <li><a href="../dashboard/products.php">Products</a></li>
-            <li><a href="">Orders</a></li>
-            <li><a href="">Completed</a></li>
             <li><a href="../dashboard/users.php">Users</a></li>
 
 

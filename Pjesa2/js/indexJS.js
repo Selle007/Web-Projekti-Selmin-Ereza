@@ -27,3 +27,18 @@ function userToggle(){
         UserItems.style.maxHeight= "0px";
     }
 }
+
+var SearchItems = document.getElementById("searchItems");
+
+SearchItems.style.maxHeight = "0px";
+
+function searchToggle(){
+    if (SearchItems.style.maxHeight== "0px")
+    {
+        SearchItems.style.maxHeight= "200px";
+    }
+    else
+    {
+        SearchItems.style.maxHeight= "0px";
+    }
+}

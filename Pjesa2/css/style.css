@@ -86,6 +86,9 @@ a{
     text-decoration:none;
     color:#FFF;
 }
+.searchIcon{
+    width: 25px;
+}
 
 /*SLIDER---------------------------------------------------------------------*/
 
@@ -134,7 +137,7 @@ main{
     justify-content:center;
     flex-direction: column;
     max-width: 80%;
-    border: blue 5px solid;
+    /*border: blue 5px solid;*/
     
 }
 h2{
@@ -153,12 +156,13 @@ h2 span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 .products{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*border: solid red 3px;*/
+
     
     
 }
@@ -177,6 +181,8 @@ h2 span {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     text-align: left;
     background-color: #FFF;
+    color: black;
+    /*border: blue 5px solid;*/
 }
 
 .productblock:hover{
@@ -246,7 +252,7 @@ h2 span {
 .comingMain{
     margin:0 auto;
     width: 80%;
-    border: blue 5px solid;
+    /*border: blue 5px solid;*/
 }
 
 .comingBlock:hover{
@@ -321,7 +327,7 @@ h2 span {
     
     width: 80%;
     
-    border: blue 5px solid;
+   /* border: blue 5px solid;*/
     
     
    
@@ -548,6 +554,48 @@ footer ul li{
     font-family: Century Gothic;
     color: #E6E6E6;
     
+}
+
+
+.searchItems{
+    display:flex;
+    align-items:right;
+    
+}
+.searchItems  ul{
+    position: absolute;
+    top:50px;
+    right:0;
+    left:0;
+    margin-left: 52%;
+    
+    width: 30%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    
+}
+.searchItems  ul li{
+    display: block;
+    margin:auto 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+.searchItems  ul li{
+    font-family: Century Gothic;
+    color: #E6E6E6;
+    
+}
+.searchItems  input[type=text], input::placeholder{
+    height: 50px;
+    width: 400px;
+    cursor: pointer;
+    border:none;
+    color: #555;
 }
 
 

@@ -26,9 +26,8 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-        
-            <img src="../Img/search.png" class="searchIcon" alt="" onclick="searchToggle()">
             <a href=""><img src="../Img/cart.png" alt=""></a>
+            
             <img src="../Img/user.png" class="userIcon" alt="" onclick="userToggle()">
 
             <div class="dropdown-content">
@@ -66,14 +65,6 @@
 
             <img src="..\Img\menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
         </div>
-    </div>
-
-    <div class="searchItems">
-        <ul id="searchItems">
-            <li> 
-                <input class="searchbar" type="text" placeholder="Search" style="font-size: 15px; padding-left: 15px; color:black;">
-            </li>
-        </ul>
     </div>
 
     <script src="../js/indexJS.js"></script>

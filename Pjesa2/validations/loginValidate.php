@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['loginBtn'])){
         if(empty($_POST['username']) || empty($_POST['password'])){
-            echo "Fill all fields!";
+            echo "<script>alert(\"Fill all fields!\");</script>";
         }
         else{
            $username = $_POST['username'];
@@ -18,8 +18,8 @@
                    $_SESSION['username']= $username;
                    $_SESSION['password']= $password;
                    $_SESSION['role']= $user['role'];
-                   $_SESSION['logintime']= date("H:i:s");
-                   header("location:home.php");
+                   
+                   header("location:../view/main.php");
 
                    exit();
                }

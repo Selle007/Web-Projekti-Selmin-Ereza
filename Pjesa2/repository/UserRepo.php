@@ -90,9 +90,10 @@ class UserRepo{
             else{
                 session_start();
                 $_SESSION['username'] = $user['username'];
-                $_SESSION['role'] == "admin";
+                $_SESSION['role']= $user['role'];
                 
-                header("location:../dashboard/dashboard.php");
+                header("location:../view/main.php");
+
                 }
         
             }
