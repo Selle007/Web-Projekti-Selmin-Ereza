@@ -17,12 +17,19 @@
 <?php
 include('../snippet/navbar.php');
 ?>
-    
-    <header>
-        <div class="image">
-            
+
+<div class="slider">
+        <div class="slider-content">
+            <img src="../Img/banner.jpg" alt="">
         </div>
-    </header>
+        <div class="slider-content">
+            <img src="../Img/banner2.jpg" alt="">
+        </div>
+        <div class="slider-content">
+            <img src="../Img/banner4.jpg" alt="">
+        </div>
+    </div>
+
 
     <br><br>
     
@@ -148,6 +155,8 @@ include('../snippet/navbar.php');
 <?php
 include('../snippet/footer.php');
 ?>
+
+<script src="../js/indexJS.js"></script>
 </body>
 
 </html>

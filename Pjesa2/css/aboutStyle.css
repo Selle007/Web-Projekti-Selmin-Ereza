@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
 main a{
   color:black;
+  
   border-bottom: #14279B;
 }
 main h1{
@@ -12,7 +14,7 @@ main h1{
 
 
 
-.slider{
+.cont1{
  display: flex;
  flex-wrap: wrap;
  justify-content:space-evenly;
@@ -22,13 +24,16 @@ main h1{
  margin: 0 auto;
  margin-top: 50px;
 }
-.slider img {
+.cont1 img {
  /*border: solid red 1px;*/
- max-width: 70%;
+ max-width: 60%;
+ width: 50%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
 }
 
-main > .text{
-border: solid red 1px;
+.cont1 .text{
+ /*border: solid red 1px;*/
 
 display: flex;
 flex-direction: column;
@@ -40,19 +45,19 @@ text-align: justify;
 
 }
 
-.text p{
+.cont1 .text p{
   padding-top: 25px;
   max-width: 100%;
 }
-.text h1{
+.cont1 .text h1{
   text-align: left;
 }
 
 
 
 @media only screen and (max-width:1200px) {
-.text{
-  /*  border: solid red 1px;*/
+  .cont1 .text{
+   /* border: solid red 1px;*/
    
    display: flex;
    
@@ -66,12 +71,13 @@ text-align: justify;
    
    
    }
-   .slider img {
-   /* border: solid red 1px;*/
+   .cont1 img {
+     /* border: solid red 1px;*/
+
     max-width: 100%;
    }
 
-   .text p{
+   .cont1 .text p{
     padding-top: 25px;
     max-width: 100%;
   }

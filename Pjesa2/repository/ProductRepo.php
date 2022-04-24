@@ -1,5 +1,5 @@
 <?php
-include 'C:\xampp\htdocs\WEB PROJEKTI\database\dbConnect.php';
+include_once '../database/dbConnect.php';
 
 class ProductRepo{
     private $connection;

@@ -144,6 +144,8 @@ main{
     width: 50%;
     margin-top: 50px;
     margin-bottom: 50px;
+    background-color: #FFF;
+
 
 }
 .product img{
@@ -151,6 +153,7 @@ main{
 }
 .productRight {
     width: 50%;
+    background-color: #FFF;
 
 }
 

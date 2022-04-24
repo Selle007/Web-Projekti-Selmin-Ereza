@@ -3,7 +3,7 @@
 
     width: 25%;
     height: 100vh;
-    background-color: #555;
+    background-color: #101f7c;
     color: #E6E6E6;
     
     
@@ -69,6 +69,7 @@ table tr th{
     width: 150px;
     height: 50px;
     border:solid #555 1px;
+    text-align: center;
 }
 
 table th:nth-child(1){
