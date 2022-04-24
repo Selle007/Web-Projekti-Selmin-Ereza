@@ -22,14 +22,26 @@
                     <li><a href="">Blog</a></li>
                     <li><a href="../view/about.php">About Us</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="../dashboard/dashboard.php" class="<?php echo $hide ?>">Dashboard</a></li>
-                    <li><a href="../controller/logout.php">Log Out</a></li>
                 </ul>
             </nav>
             <a href=""><img src="../Img/cart.png" alt=""></a>
-            <a href="../view/login.php"><img src="../Img/user.png" alt=""></a>
+            
+            <img src="../Img/user.png" class="userIcon" alt="" onclick="userToggle()">
+
+            <div class="userItems">
+                <ul id="userItems">
+                    
+                    <li><a href="../view/login.php" class="<?php echo $hide ?>">Log In</a></li>
+                    <li><a href="../dashboard/dashboard.php" class="<?php echo $hide ?>">Dashboard</a></li>
+                    <li><a href="../controller/logout.php">Log Out</a></li>
+                </ul>
+            </div>
+
             <img src="..\Img\menuIcon.png" alt="" class="menuIcon" onclick="menuToggle()">
         </div>
     </div>
+
+    <script src="../js/indexJS.js"></script>
 </body>
 </html>
+

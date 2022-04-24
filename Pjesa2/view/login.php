@@ -34,6 +34,8 @@ include_once '../controller/loginController.php';
         </form>
     </main>
     <?php  include('../snippet/footer.php');?>
+
+    <script src="../js/validation.js"></script>
    
 </body>
 </html>

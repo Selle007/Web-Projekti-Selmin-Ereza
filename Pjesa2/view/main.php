@@ -27,7 +27,7 @@ include('../snippet/navbar.php');
         </div>
     </header>
 
-    <br>
+    <br><br>
     
     <div class="bestseller">
     <h2><span>Best Sellers</span></h2>
@@ -65,11 +65,13 @@ include('../snippet/navbar.php');
             
             <?php endforeach; ?>
     </div>
+    </div>
     
 <!------------------------------------------------------>
+<br>
 
     <div class="comingMain">    
-            <h2><span>Coming Soon</span></h2><br>
+    <h2><span>Coming Soon</span></h2><br>
             <div class="comingHead">
             <?php
                 include_once "../repository/ProductRepo.php";
@@ -93,8 +95,53 @@ include('../snippet/navbar.php');
                 </div>
                 <?php endforeach; ?>
             </div>
-                
+        </div>       
         <!------------------------------------------------------>
+        
+        <div class="reviews">
+            
+            <h2><span>Happy Customers</span></h2>
+            <br>
+            <div class="reviewsBlock">
+                <div class="r">
+                    <img src="..\Img\user1.jpg" alt="">
+                    <h4>Name #1</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe possimus accusamus accusantium delectus odio eius placeat ea atque! Nesciunt quibusdam placeat impedit corrupti, autem soluta tenetur! Quia, ipsum sed.</p>
+                    <h4>&#11088;4.5</h4>
+                </div>
+                <div class="r">
+                    <img src="..\Img\user2.png" alt="">
+                    <h4>Name #2</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe possimus accusamus accusantium delectus odio eius placeat ea atque! Nesciunt quibusdam placeat impedit corrupti, autem soluta tenetur! Quia, ipsum sed.</p>
+                    <h4>&#11088;4.5</h4>
+                </div>
+                <div class="r">
+                    <img src="..\Img\user3.jpg" alt="">
+                    <h4>Name #3</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe possimus accusamus accusantium delectus odio eius placeat ea atque! Nesciunt quibusdam placeat impedit corrupti, autem soluta tenetur! Quia, ipsum sed.</p>
+                    <h4>&#11088;4.5</h4>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <br>
+        <div class="newsletter">
+            <div class="newsText">
+                <h3 id="no-style">Subscribe to our Newsletter</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur numquam sapiente accusamus? Odit dolor voluptatem ut, ipsa blanditiis ipsam, atque officiis eos, accusamus aliquid quisquam ab maxime vel quam!</p>
+                <div class="newsSearch">
+                    <input type="text" id="textbox" placeholder="Enter a avalid email address:" style="font-size: 15px; padding-left: 15px; color:black;">
+                    <a href=""><button id="submit">Submit</button></a>
+                </div>
+            </div>
+            
+            <img src="..\Img\newsletter.jpg" alt="">
+        </div>
+        
 
     
 

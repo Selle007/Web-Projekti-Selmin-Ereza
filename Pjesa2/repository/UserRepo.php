@@ -84,29 +84,22 @@ class UserRepo{
                echo "<script> alert('Email entered incorrectly!'); </script>";
         }
         else{
-               if ($password != $user['password']) {
-                   echo "<script> alert('Password entered incorrectly!'); </script>";
-               }
-                else{
-                    session_start();
-                    $_SESSION['username'] = $user['username'];
-                    $_SESSION['role'] == "admin";
-                    
-                    header("location:../dashboard/dashboard.php");
-                    }
-                    else {
-                        session_start();
-                        $_SESSION['username'] = $user['username'];
-                        $_SESSION['role'] == "customer";
-                        
-                        header("location:../view/main.php");
-                    }
-                    
-                }
-                
+            if ($password != $user['password']) {
+                echo "<script> alert('Password entered incorrectly!'); </script>";
             }
+            else{
+                session_start();
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['role'] == "admin";
+                
+                header("location:../dashboard/dashboard.php");
+                }
+        
+            }
+            
         }
-    } 
+    }
+    
 
 
 
